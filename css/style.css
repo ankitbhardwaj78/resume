@@ -839,6 +839,162 @@ top:10px;
 transform:rotate(-45deg);
 }
 
+
+
+/*-- effect --*/
+.hovicon {
+    display: inline-block;
+    font-size: 2.2em;
+    line-height: 71px;
+    cursor: pointer;
+    margin: 27px 28px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: #fff;
+}
+.hovicon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+/* Effect 2 */
+ .hovicon.effect-2 {
+    color: #fff;
+	box-shadow:0 0 0 3px #07cb79;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.hovicon.effect-2:after {
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    background:#07cb79;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+/* Effect 2a */
+ .hovicon.effect-2.sub-a:hover, .hovicon.effect-2.sub-a:hover i {
+    color:#eee;
+}
+.hovicon.effect-2.sub-a:hover:after {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+/*-- //effect --*/
+
+
+
+/*-- Portfolio-starts-here --*/
+#portfolio{
+    padding: 4em 0;
+    	padding: 2.5em 0;
+}
+h3.agile-title{
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.gallery_gds{
+  margin-top: 3em;
+}
+.filtr-item {
+   padding: 0 3px !important;
+}
+.col-md-6.agileits-img.g2 {
+    padding: 0 3px 0px 0px !important;
+}
+.col-md-6.agileits-img.g4 {
+    padding: 0 0px 0px 3px !important;
+}
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    z-index: 1;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+}
+/* Filter controls */
+ul.simplefilter {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.simplefilter li {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1em 2em;
+}
+.simplefilter li {
+    background-color: #17b9ea;
+}
+.simplefilter li.active {
+    background-color: #f30d60;
+}
+/*-- img-hover-effect --*/
+.adipoli-wrapper{
+    margin:auto;
+    position:relative;
+    display: inline-block;
+}
+.adipoli-wrapper>img{
+    position: absolute;
+    z-index: 1;
+}
+.adipoli-before{
+    position: absolute;
+    z-index: 5;
+}
+.adipoli-after{
+    position: absolute;
+    z-index: 10;
+}
+.adipoli-slice {
+    display:block;
+    position:absolute;
+    z-index:15;
+    height:100%;
+	background-size: cover !important;
+}
+/*-- //img-hover-effect --*/
+/*-- Portfolio-ends-here --*/
+
+
+
+
+
+
 /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
 
 .lightbox-target:target {
@@ -856,7 +1012,7 @@ left: 0%;
 .lightbox-target:target a.lightbox-close {
 top: 0px;
 }
-a.lightbox img:hover { 
+a.lightbox img:hover {
  background:#21A957;
 }
 /*--//projects--*/
@@ -936,15 +1092,15 @@ a.lightbox img:hover {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, 0.65); 
+   color: rgba(255, 255, 255, 0.65);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255, 255, 255, 0.65);  
+   color: rgba(255, 255, 255, 0.65);
 }
 
-:-ms-input-placeholder {  
-   color: rgba(255, 255, 255, 0.65);  
+:-ms-input-placeholder {
+   color: rgba(255, 255, 255, 0.65);
 }
 /*--//placeholder-color--*/
 
@@ -983,7 +1139,7 @@ a.lightbox img:hover {
 	bottom: 20px;
 	right: 2%;
 	overflow: hidden;
-	z-index: 999; 
+	z-index: 999;
 	width: 32px;
 	height: 32px;
 	border: none;
@@ -1071,7 +1227,7 @@ h3.agileits-title{
     -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -o-transform: scale(0);
-    -ms-transform: scale(0); 
+    -ms-transform: scale(0);
     transform: scale(0);
     color: #e4e2e2;
 }
@@ -1087,7 +1243,7 @@ h3.agileits-title{
     -webkit-transform: scale(1);
   -moz-transform: scale(1);
     -ms-transform: scale(1);
-  -o-transform: scale(1); 
+  -o-transform: scale(1);
     transform: scale(1);
 }
 
@@ -1145,7 +1301,7 @@ h3.agileits-title{
    .resume .content a{
       color: #fff;
       text-transform: uppercase;
-     } 
+     }
       .resume .content a .btn-resume{
         display: inline-block;
         font-size: 1.1em;
@@ -1156,13 +1312,13 @@ h3.agileits-title{
         border:2px solid #fff;
         border-radius: 5px;
         overflow: hidden;
-       } 
+       }
         .resume .content a .btn-resume span{
           -webkit-transition: opacity 1.2s;
           -moz-transition: opacity 1.2s;
           transition: opacity 1.2s;
         }
-        
+
        .resume .content a .btn-resume i{
           color:#fff;
           position:absolute;
@@ -1174,7 +1330,7 @@ h3.agileits-title{
           -moz-transition: top .5s;
           transition: top .5s;
         }
-        
+
        .resume .content a .btn-resume :hover {
          .resume .content a .btn-resume span{
             opacity: 0;
@@ -1190,7 +1346,7 @@ h3.agileits-title{
 /*-- //to-top --*/
 /*--responsive--*/
 @media(max-width:1680px){
-	
+
 }
 @media(max-width:1440px){
 	.header {
@@ -1626,7 +1782,7 @@ h3.agileits-title{
 	.contact-agileits-w3layouts p {
 		font-size: 13.5px;
 	}
-	
+
 }
 @media(max-width:800px){
 	h4.title-w3ls {
